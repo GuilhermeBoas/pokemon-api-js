@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* cabecalho */
+:root{
+    /* gradiente do cabecalho */
+    --cor-1:#DA430A;
+    --cor-2:#FF6513;
+    --cor-3:#FF5E0F;
+    /* gradiente vermelho */
+    --cor-4:#da0a0a;
+    --cor-5:#ff1313;
+    --cor-6:#ff0f0f;
+}
+.cabecalho{
+    background: linear-gradient(to left,var(--cor-4),var(--cor-5),var(--cor-4));
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid #c70000;
+    position: fixed;
+    width: 100%;
+}
+.cabecalho img{
+    width: 10%;
+    padding: 0.5em;
+}
+
+/* menu lateral  */
+
+.menu-lateral{
+    width: 200px;
+    height: 110vh;
+    box-sizing: border-box;
+    background: linear-gradient(var(--cor-4),var(--cor-5),var(--cor-4));
+    position: fixed;
+    top: 9%;
+    
+
+    
+}
+
+.menu-lateral ul{
+    border-bottom: 1px solid black;
+}
+
+.menu-lateral ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5em;
+    
+}
+
+.pokedex__icon{
+    width: 30%;
+    /* fazer o icon de cada uma arredondado  */
+}
+.tema__icon{
+    width: 15%;
+}
+
+/* MAIN */
+
+.main-container{
+    position: relative;
+    height: 100vh;
+    z-index:-1;
+}
+
+.background-animado video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%; 
+    
+    z-index:-2;
+    bottom:0;
+    left: 0;
+    /* reposicionar */
+}
+
+.sumir{
+    display: none;
+}

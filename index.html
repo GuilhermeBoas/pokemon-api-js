@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/pokedex.png" alt=""></img>
+    </header>
+
+    <aside class='menu-lateral'>
+        <ul>
+            <li>
+                <button id="waterfall">
+                    <img class='tema__icon' src='/img/waterfall-icon.png' alt='icone de uma cachoeira'></img>
+                    <span>waterfall</span>
+                </button>
+            </li>
+            <li>
+                <button id="city">
+                    <img class='tema__icon' src='/img/city-icon.png' alt='icone de uma cidade'></img>
+                    <span>city</span>
+                </button>
+            </li>
+            <li>
+                <button id="god">
+                    <img class='tema__icon' src='/img/god-icon.png' alt='icone de um céu'></img>
+                    <span>god</span>
+                </button>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-container">
+        
+        <section class='background-animado'>    
+            <video class="waterfall" autoPlay muted loop>
+                <source src='/gif/waterfall.mp4' type="video/mp4" />
+            </video>
+            <video class="god" autoPlay muted loop>
+                <source src='/gif/god.mp4' type="video/mp4" />
+            </video>
+            <video class="city" autoPlay muted loop>
+                <source src='/gif/city.mp4' type="video/mp4" />
+            </video>
+            
+            
+    
+        </section>
+    </main>
+
+</body>
+</html>
